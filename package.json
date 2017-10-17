@@ -1,8 +1,9 @@
 {
   "name": "decomment-cli",
   "version": "0.0.3",
-  "description": "Minimal, practical boilerplate for writing Node-powered CLI tools",
-  "main": "index.js",
+  "homepage": "https://github.com/jeremyckahn/decomment-cli",
+  "description": "CLI interface for decomment",
+  "main": "lib/index.js",
   "bin": {
     "decomment-cli": "./bin/cli.js"
   },
