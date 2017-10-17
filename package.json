@@ -4,6 +4,14 @@
   "homepage": "https://github.com/jeremyckahn/decomment-cli",
   "description": "CLI interface for decomment",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeremyckahn/decomment-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeremyckahn/decomment-cli/issues",
+    "email": "jeremyckahn@gmail.com"
+  },
   "bin": {
     "decomment-cli": "./bin/cli.js"
   },
