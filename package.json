@@ -1,6 +1,6 @@
 {
   "name": "decomment-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/jeremyckahn/decomment-cli",
   "description": "CLI interface for decomment",
   "main": "lib/index.js",
