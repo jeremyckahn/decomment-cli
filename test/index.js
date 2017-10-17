@@ -8,7 +8,7 @@ const beforeBasic = readFileSync(path.join(__dirname, 'before/basic.js'), 'utf8'
 const afterBasic = readFileSync(path.join(__dirname, 'after/basic.js'), 'utf8');
 
 describe('library', () => {
-  it('returns the provided text', () => {
+  it('returns the provided code without comments', () => {
     assert.equal(library(beforeBasic), afterBasic);
   });
 });
