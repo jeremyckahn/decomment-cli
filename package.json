@@ -1,6 +1,6 @@
 {
   "name": "decomment-cli",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Minimal, practical boilerplate for writing Node-powered CLI tools",
   "main": "index.js",
   "bin": {
