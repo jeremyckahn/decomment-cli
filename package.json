@@ -1,10 +1,10 @@
 {
-  "name": "strip-comments-cli",
+  "name": "decomment-cli",
   "version": "0.0.0",
   "description": "Minimal, practical boilerplate for writing Node-powered CLI tools",
   "main": "index.js",
   "bin": {
-    "strip-comments-cli": "./bin/cli.js"
+    "decomment-cli": "./bin/cli.js"
   },
   "scripts": {
     "build": "webpack",

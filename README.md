@@ -1,4 +1,4 @@
-# strip-comments-cli
+# decomment-cli
 
 Minimal, practical boilerplate for writing Node-powered CLI tools.  By default it processes text in a UNIX-friendly way.
 
@@ -7,7 +7,7 @@ Minimal, practical boilerplate for writing Node-powered CLI tools.  By default i
 ```
 $: npm install && ./bin/cli.js --help
 
-  Usage: strip-comments-cli [options]
+  Usage: decomment-cli [options]
 
   Options:
 
@@ -26,10 +26,10 @@ function new_cli_tool () {
     "Must specify a project name as the first argument"
     return
   else
-    git clone --depth=1 https://github.com/jeremyckahn/strip-comments-cli.git "$1"
+    git clone --depth=1 https://github.com/jeremyckahn/decomment-cli.git "$1"
     cd "$1" || exit 1
     rm -rf .git
-    find . -type f -exec sed -i "" "s/strip-comments-cli/$1/g" {} \;
+    find . -type f -exec sed -i "" "s/decomment-cli/$1/g" {} \;
     git init
     git add --all
     git commit -m "Initial commit"
