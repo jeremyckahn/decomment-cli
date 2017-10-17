@@ -1,11 +1,11 @@
 # decomment-cli
 
-Minimal, practical boilerplate for writing Node-powered CLI tools.  By default it processes text in a UNIX-friendly way.
+A CLI interface for https://github.com/vitaly-t/decomment.
 
 ## Usage
 
 ```
-$: npm install && ./bin/cli.js --help
+$: npm install -g decomment-cli
 
   Usage: decomment-cli [options]
 
@@ -15,27 +15,18 @@ $: npm install && ./bin/cli.js --help
     -V, --version  output the version number
 ```
 
-## Getting started
-
-Here's a handy snippet you can add to your `.bash_profile` to create new tools easily:
+Works in a UNIX-y way:
 
 ```
-function new_cli_tool () {
-  if [ -z "$1" ];
-  then
-    "Must specify a project name as the first argument"
-    return
-  else
-    git clone --depth=1 https://github.com/jeremyckahn/decomment-cli.git "$1"
-    cd "$1" || exit 1
-    rm -rf .git
-    find . -type f -exec sed -i "" "s/decomment-cli/$1/g" {} \;
-    git init
-    git add --all
-    git commit -m "Initial commit"
-    npm install
-  fi
-}
+$ cat test/before/basic.js
+// Hi I'm a comment
+var a = 'Hello World!';
+
+$ cat test/before/basic.js | decomment-cli
+var a = 'Hello World!';
+
+$ decomment-cli < test/before/basic.js
+var a = 'Hello World!';
 ```
 
 ## License
